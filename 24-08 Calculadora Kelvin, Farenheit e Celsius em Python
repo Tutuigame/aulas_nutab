@@ -12,34 +12,35 @@ def celsius_farenheit(C):
     return F
     
 def celsius_kelvin(C):
-    K = (C+273,15)
+    K = (C+273.15)
     return K
     
 def farenheit_kelvin(F):
-    K = (F+273,15)
-    return 0
+    K = (F+273.15)
+    return K
     
 def farenheit_celsius(F):
     C = (F-32)*5/9
-    return 0
+    return C
     
-def kelvin_celsius(K):
+def kelvin_celsius(C):
     K = (C+273,15)
-    return 0
+    return K
     
 def kelvin_farenheit(K):
-    F = (K - 273,15)*9/5 + 32
-    return 0
+    F = (K - 273.15)*9/5 + 32
+    return F
     
-    print("Escolha uma opção")
-    print("1-Celsius para Farenheit")
-    print("2-Celsius para Kelvin")
-    print("3-Farenheit para Kelvin")
-    print("4-Farenheit para Celsius")
-    print("5-Kelvin para Celsius")
-    print("6-Kelvin para Farenheit")
+print("Escolha uma opção")
+print("1-Celsius para Farenheit")
+print("2-Celsius para Kelvin")
+print("3-Farenheit para Kelvin")
+print("4-Farenheit para Celsius")
+print("5-Kelvin para Celsius")
+print("6-Kelvin para Farenheit")
 
-temperatura = float(input ("Selecione uma das opções:"))
+opcao = int(input ("Selecione uma das opções:"))
+temperatura = float(input ("Informe a temperatura inicial:"))
 if opcao == 1: 
     print(celsius_farenheit(temperatura))
 if opcao == 2:
