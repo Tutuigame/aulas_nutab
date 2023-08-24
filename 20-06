@@ -1,0 +1,40 @@
+opcao=0
+tempo=0
+montante=0
+juros=0
+taxa=0
+valor=0
+
+while opcao !=3:
+    print("Escolha uma das opções:")
+    print("[1]Juros simples")
+    print("[2]Juros compostos")
+    print("[3]SAIR")
+    opcao = int(input())
+
+    if opcao == 1:
+        print("Informe o valor:")
+        valor = float(input())
+        print("Informe a taxa:")
+        valor = float(input())
+        print("Informe o tempo:")
+        tempo = int(input())
+
+        juros = (taxa/100)*tempo*valor
+
+        print("O valor do juros é: ",
+        round(valor+juros, 2), "/n")
+
+    if opcao == 2:
+        print("Informe o valor:")
+        valor = float(input())
+        print("Informe a taxa:")
+        valor = float(input())
+        print("Informe o tempo:")
+        tempo = int(input())
+
+        juros = valor * ((1 + taxa/100)**(tempo))
+        #elevacao pow(base, expoente)
+        print("O valor do juros é: ", juros, "/n")
+
+print("Até mais!")
