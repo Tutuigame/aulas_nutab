@@ -1,0 +1,54 @@
+#Celsius para Farenheit (°C x 9/5) + 32
+#Celsius para Kelvin (°C + 273,15)
+
+#Farenheit para Kelvin (°F - 32) x 5/9 + 273,15
+#Farenheit para Celsius (°F - 32) x 5/
+
+#Kelvin para Celsius (K - 273,15)
+#Kelvin para Farenheit (K - 273,15) x 9/5 + 32
+
+def celsius_farenheit(C):
+    F = (C*9/5) + 32
+    return F
+    
+def celsius_kelvin(C):
+    K = (C+273,15)
+    return K
+    
+def farenheit_kelvin(F):
+    K = (F+273,15)
+    return 0
+    
+def farenheit_celsius(F):
+    C = (F-32)*5/9
+    return 0
+    
+def kelvin_celsius(K):
+    K = (C+273,15)
+    return 0
+    
+def kelvin_farenheit(K):
+    F = (K - 273,15)*9/5 + 32
+    return 0
+    
+    print("Escolha uma opção")
+    print("1-Celsius para Farenheit")
+    print("2-Celsius para Kelvin")
+    print("3-Farenheit para Kelvin")
+    print("4-Farenheit para Celsius")
+    print("5-Kelvin para Celsius")
+    print("6-Kelvin para Farenheit")
+
+temperatura = float(input ("Selecione uma das opções:"))
+if opcao == 1: 
+    print(celsius_farenheit(temperatura))
+if opcao == 2:
+    print(celsius_kelvin(temperatura))
+if opcao == 3:
+    print(farenheit_kelvin(temperatura))
+if opcao == 4:   
+    print(farenheit_celsius(temperatura))
+if opcao == 5:  
+    print(kelvin_celsius(temperatura))
+if opcao == 6:  
+    print(kelvin_farenheit(temperatura))
