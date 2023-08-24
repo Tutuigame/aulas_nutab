@@ -1,0 +1,83 @@
+#Ler o valor informado pelo usuário e calcular o fatorial do número;
+#Utilizar uma função para efetuar o cálculo;
+#ENTRADA: 3;
+#SAIDA: 6;
+
+def fatorial_simples(x):  
+    aux = 1
+    while x > 0:
+        aux = aux*x
+        x=x-1
+    return aux
+    
+def fatorial_recursivo(x):
+    if x == 1:
+        return 1
+    else:
+        return x * fatorial_recursivo(x-1)
+#X == 3
+#X == 2
+#X == 1
+
+variavel = int (input("Informe um valor para ser calculado o fatorial!"))
+print(fatorial_simples(variavel)) 
+----------------------------------------------------------
+#calcular um número elevado a outro numero utilizando uma função recursiva
+#ENTRADA: 3, 3
+#SAIDA: 27
+
+#def fatorial_recursivo(x):
+#   if x == 1:
+#       return 1
+#   else:
+#       return x * fatorial_recursivo(x-1)
+def calcular_elevacao(raiz, expoente):
+    if expoente == 1:
+        return raiz
+    else:
+        return raiz * calcular_elevacao(raiz, expoente-1)
+
+raiz = int(input("Informe a raiz do valor:"))
+expoente = int(input("Informe o expoente do valor:"))
+print(calcular_elevacao(raiz,expoente))
+----------------------------------------------------------
+#criar uma calculadora utilizando conceitos vistos previamente para 
+#executar as operações a seguir:
+#Soma, subtração, divisão, multiplicação, fatorial, elevação, raiz
+#porcentaem, logaritmos.
+#TEM QUE CONTER CONSTANTES: PI, Euler 
+def soma():
+    return
+def subtração():
+    return
+def divisão():
+    return
+def multiplicação():
+    return
+def fatorial():
+    return
+def porcentagem():
+    return
+def logaritmos():
+    return
+def raiz():
+    return
+def elevação():
+    return
+
+print("SELECIONE A OPÇÃO DESEJADA")
+print("1 para a adição")
+print("2 para a subtração")
+print("3 para a divisão")
+print("4 para multiplicação")
+print("5 para fatorial")
+print("6 para porcentagem")
+print("7 para logaritmos")
+
+if numero == "1":
+    a1 = float(input("\nDigite o primeiro Número"))
+    a2 = float(input("\nDigite o segundo Número"))
+    adição = n1 + n2
+    print("\nA soma entre"a1,"e",a2,"é:", adição,"\n")
+    print("*"*33,"\n")
+    continuar_usando = input("Gostaria de fazer outra operação? ")
