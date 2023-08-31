@@ -1,4 +1,7 @@
-dadosJson = "{  \"título\": \"JSON x XML\", \"resumo\": \"o duelo de dois modelos de represantação de informações\", \"ano\": 2012, \"genero\": [\"aventura\", \"ação\", \"ficção\"] }"
+dadosJson = "{  \"título\": \"JSON x XML\",\n"
+  "\"resumo\": \"o duelo de dois modelos de represantação de informações\",\n"
+  "\"ano\": 2012, \"genero\": [\"aventura\", \"ação\", 
+  \"ficção\"] }")
 f = open("teste.json", "w")
 f.write (dadosJson)
 f.close()
